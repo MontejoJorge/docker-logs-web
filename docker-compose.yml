@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  counter:
+    container_name: test
+    image: busybox:latest
+    init: true
+    command: '/bin/sh -c "while true; do date; sleep 2; done"'
